@@ -1,16 +1,24 @@
 class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
-        int n = nums.length;
-        int[] nums2= new int[n];
-        for(int i =0;i<n;i++){
-            int count=0;
-            for(int j=0;j<n;j++){
-                if(nums[i]>nums[j]){
-                    count++;
-                }
-            }
-            nums2[i]=count;
+        int[] freq = new int[101];
+        int[] ans = new int[nums.length];
+        // Count each number
+        for (int num : nums) {
+            freq[num]++;
         }
-        return nums2;
+        // Prefix sum
+        for (int i = 1; i <= 100; i++) {
+            freq[i] += freq[i - 1];
+        }
+        // Number of values smaller than nums[i]
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0) {
+                ans[i] = 0;
+            } else {
+                ans[i] = freq[nums[i] - 1];
+            }
+        }
+
+        return ans;
     }
 }
