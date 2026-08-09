@@ -67,4 +67,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/ydhiraj811/leetcode-solutions/tree/master/0014-longest-common-prefix) |
+## Math
+|  |
+| ------- |
+| [1492-the-kth-factor-of-n](https://github.com/ydhiraj811/leetcode-solutions/tree/master/1492-the-kth-factor-of-n) |
+## Number Theory
+|  |
+| ------- |
+| [1492-the-kth-factor-of-n](https://github.com/ydhiraj811/leetcode-solutions/tree/master/1492-the-kth-factor-of-n) |
+## Prime Factorization
+|  |
+| ------- |
+| [1492-the-kth-factor-of-n](https://github.com/ydhiraj811/leetcode-solutions/tree/master/1492-the-kth-factor-of-n) |
 <!---LeetCode Topics End-->
